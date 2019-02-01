@@ -1,20 +1,20 @@
 function Pizza(size, toppings) {
-  this.size = size
-  this.toppings = toppings
+  this.size = size;
+  this.toppings = toppings;
 }
 
 Pizza.prototype.price = function() {
-   var p = 3
+   var p = 3;
    if (this.size == "Small") {
-     p += 1
+     p += 1;
    } else if (this.size == "Medium") {
-     p += 2
+     p += 2;
    } else if (this.size == "Large") {
-     p += 4
-   }
+     p += 4;
+   };
 
    var t = this.toppings.length;
-   p += t
+   p += t;
 
    return p;
 
