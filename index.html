@@ -8,21 +8,27 @@
     <title>Pizza</title>
   </head>
   <body>
-
+  <div class="container">
+    <h3>Pizza!</h3>
   <form id="form">
     <select id="size">
        <option value="small">Small</option>
        <option value="medium">Medium</option>
        <option value="large">Large</option>
-     </select> <br>
-     <input type="checkbox" name="topping" value="1">Pepperoni<br>
-     <input type="checkbox" name="topping" value="1">Sausage<br>
-     <input type="checkbox" name="topping" value="1">Meatball<br>
-     <input type="checkbox" name="topping" value="1">Extra Cheese<br>
+     </select> <br><br>
+     <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
+     <input type="checkbox" name="topping" value="sausage"> Sausage<br>
+     <input type="checkbox" name="topping" value="meatball"> Meatball<br>
+     <input type="checkbox" name="topping" value="extra cheese"> Extra Cheese<br><br>
+
+     <input type="text" name="name" placeholder="Your Name"></input> <br><br>
+
     <button type="submit">Check price!</button>
   </form>
 
-
-
+  <br>
+  <div id="pizzas">
+  </div>
+  </div>
   </body>
 </html>

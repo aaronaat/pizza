@@ -1,5 +1,3 @@
-
-
 function Pizza(size, toppings) {
   this.size = size
   this.toppings = toppings
@@ -29,15 +27,17 @@ $(document).ready(function() {
 
       var s = ($('#size :selected').text());
 
-      var t = []
+      var t = [];
 
       $("input:checked[name=topping]").each(function(){
         t.push($(this).val());
       });
 
-      var za = new Pizza(s, t)
+      var name = $("input[name=name]").val();
 
-      alert(za.price())
+      var za = new Pizza(s, t);
+
+      $( "#pizzas" ).append("$" + za.price() + ". " + za.size + " " + za.toppings + " pizza for " + name + "! <br>");
 
   });
 });
